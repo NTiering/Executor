@@ -7,7 +7,7 @@ Simple lightweight event broker for C#
              */
 
             /* ----------------------------------------
-            Simple subscribe / publish (strings define the channels "A" in this case) 
+            Simple subscribe / broadcast (strings define the channels "A" in this case) 
             ---------------------------------------- */
             var brokerOne = new Broker();
             brokerOne.Subscribe("A", (x) => { Console.WriteLine("Hello World"); });
