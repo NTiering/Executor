@@ -1,6 +1,14 @@
-# Executor
-Simple lightweight event broker for C#
+﻿using Executor;
+using System;
 
+
+namespace Example
+{ 
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
             /*
             using Executor;
             using System;
@@ -93,3 +101,13 @@ Simple lightweight event broker for C#
 
             Console.WriteLine("Any key to quit...");
             Console.ReadKey();
+        }
+
+    }
+
+    class BrokerContext : IBrokerContext
+    {
+        public IBroker Broker { get; set; }
+        public string Value { get; set; }
+    }
+}
